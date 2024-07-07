@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/VrticMedo/.vs/VrticMedo
+/.vs
+/VrticMedo/MobileApp/bin/Debug
+/VrticMedo/MobileApp/obj

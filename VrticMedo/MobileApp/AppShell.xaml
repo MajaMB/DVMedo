@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MobileApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MobileApp"
+    xmlns:views="clr-namespace:MobileApp.Views"
+    Shell.FlyoutBehavior="Flyout"
+    Title="Dječji vrtić Medo">
+
+    <FlyoutItem Title="News"
+                Icon="news_icon.svg">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate views:NewsPage}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Menu"
+                Icon="restaurant_icon.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate views:MenuPage}" />
+        </Tab>
+    </FlyoutItem>
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate views:NewsPage}"
+        Route="MainPage" />
+
+</Shell>
