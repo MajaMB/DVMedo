@@ -1,0 +1,7 @@
+{
+    "require": {
+        "erusev/parsedown": "*",
+        "symfony/yaml": "*",
+        "spatie/yaml-front-matter": "*"
+    }
+}

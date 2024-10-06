@@ -9,7 +9,7 @@
                   <div class="col-lg-3 col-md-6 col-sm-6">
                      <div class="bd-footer-widget bd-footer-widget-1 mb-50">
                         <div class="bd-footer-logo mb-35">
-                           <a href="index.html"> <img src="assets/img/logo/logo.svg" alt="img not found!"></a>
+                           <a href="index.html"> <img src="/assets/img/logo/logo.svg" alt="img not found!"></a>
                         </div>
                         <div class="bd-footer-widget-content mb-40">
                            <p>In our Adult Participation programs, for most students, it is their first program in
@@ -85,7 +85,7 @@
             <div class="offcanvas__top mb-40 d-flex justify-content-between align-items-center">
                <div class="offcanvas__logo logo">
                   <a href="index.html">
-                     <img src="assets/img/logo/logo.svg" alt="logo">
+                     <img src="/assets/img/logo/logo.svg" alt="logo">
                   </a>
                </div>
                <div class="offcanvas__close">
@@ -185,24 +185,24 @@
    <!-- serach popup area end here  -->
 
    <!-- JS here -->
-   <script src="assets/js/vendor/jquery.js"></script>
-   <script src="assets/js/vendor/waypoints.js"></script>
-   <script src="assets/js/bootstrap-bundle.js"></script>
-   <script src="assets/js/meanmenu.js"></script>
-   <script src="assets/js/swiper-bundle.js"></script>
-   <script src="assets/js/slick.js"></script>
-   <script src="assets/js/nouislider.js"></script>
-   <script src="assets/js/magnific-popup.js"></script>
-   <script src="assets/js/parallax.js"></script>
-   <script src="assets/js/backtotop.js"></script>
-   <script src="assets/js/nice-select.js"></script>
-   <script src="assets/js/wow.min.js"></script>
-   <script src="assets/js/isotope-pkgd.js"></script>
-   <script src="assets/js/imagesloaded-pkgd.js"></script>
-   <script src="assets/js/ajax-form.js"></script>
-   <script src="assets/js/jquery.appear.js"></script>
-   <script src="assets/js/jquery.odometer.min.js"></script>
-   <script src="assets/js/main.js"></script>
+   <script src="/assets/js/vendor/jquery.js"></script>
+   <script src="/assets/js/vendor/waypoints.js"></script>
+   <script src="/assets/js/bootstrap-bundle.js"></script>
+   <script src="/assets/js/meanmenu.js"></script>
+   <script src="/assets/js/swiper-bundle.js"></script>
+   <script src="/assets/js/slick.js"></script>
+   <script src="/assets/js/nouislider.js"></script>
+   <script src="/assets/js/magnific-popup.js"></script>
+   <script src="/assets/js/parallax.js"></script>
+   <script src="/assets/js/backtotop.js"></script>
+   <script src="/assets/js/nice-select.js"></script>
+   <script src="/assets/js/wow.min.js"></script>
+   <script src="/assets/js/isotope-pkgd.js"></script>
+   <script src="/assets/js/imagesloaded-pkgd.js"></script>
+   <script src="/assets/js/ajax-form.js"></script>
+   <script src="/assets/js/jquery.appear.js"></script>
+   <script src="/assets/js/jquery.odometer.min.js"></script>
+   <script src="/assets/js/main.js"></script>
 </body>
 
 </html>

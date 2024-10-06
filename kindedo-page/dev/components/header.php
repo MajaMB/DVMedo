@@ -9,22 +9,22 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
 
    <!-- Place favicon.ico in the root directory -->
-   <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+   <link rel="shortcut icon" type="image/x-icon" href="/assets/img/logo/favicon.png">
 
    <!-- CSS here -->
-   <link rel="stylesheet" href="assets/css/bootstrap.css">
-   <link rel="stylesheet" href="assets/css/meanmenu.css">
-   <link rel="stylesheet" href="assets/css/animate.min.css">
-   <link rel="stylesheet" href="assets/css/swiper-bundle.css">
-   <link rel="stylesheet" href="assets/css/slick.css">
-   <link rel="stylesheet" href="assets/css/nouislider.css">
-   <link rel="stylesheet" href="assets/css/backtotop.css">
-   <link rel="stylesheet" href="assets/css/magnific-popup.css">
-   <link rel="stylesheet" href="assets/css/nice-select.css">
-   <link rel="stylesheet" href="assets/css/flaticon_kindedo.css">
-   <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
-   <link rel="stylesheet" href="assets/css/spacing.css">
-   <link rel="stylesheet" href="assets/css/main.css">
+   <link rel="stylesheet" href="/assets/css/bootstrap.css">
+   <link rel="stylesheet" href="/assets/css/meanmenu.css">
+   <link rel="stylesheet" href="/assets/css/animate.min.css">
+   <link rel="stylesheet" href="/assets/css/swiper-bundle.css">
+   <link rel="stylesheet" href="/assets/css/slick.css">
+   <link rel="stylesheet" href="/assets/css/nouislider.css">
+   <link rel="stylesheet" href="/assets/css/backtotop.css">
+   <link rel="stylesheet" href="/assets/css/magnific-popup.css">
+   <link rel="stylesheet" href="/assets/css/nice-select.css">
+   <link rel="stylesheet" href="/assets/css/flaticon_kindedo.css">
+   <link rel="stylesheet" href="/assets/css/font-awesome-pro.css">
+   <link rel="stylesheet" href="/assets/css/spacing.css">
+   <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 
 <body>
@@ -34,7 +34,7 @@
          <div class="preloader-thumb-wrap">
             <div class="preloader-thumb">
                <div class="preloader-border"></div>
-               <img src="assets/img/bg/preloader.png" alt="img not found!">
+               <img src="/assets/img/bg/preloader.png" alt="img not found!">
             </div>
          </div>
       </div>
@@ -102,7 +102,7 @@
                   <div class="d-flex align-items-center justify-content-between">
                      <div class="bd-header-logo">
                         <a href="index.html">
-                           <img src="assets/img/logo/logo.svg" alt="logo">
+                           <img src="/assets/img/logo/logo.svg" alt="logo">
                         </a>
                      </div>
                      <div class="bd-main-menu d-none d-lg-flex align-items-center">
@@ -148,7 +148,7 @@
                                        <ul>
                                           <li>
                                              <div class="mega-menu-2-inner-thumb p-relative">
-                                                <img src="assets/img/logo/mega-menu-1.png" alt="img not found!">
+                                                <img src="/assets/img/logo/mega-menu-1.png" alt="img not found!">
                                                 <div class="mega-menu-2-inner-thumb-content">
                                                    <h4>Join New Program</h4>
                                                    <div class="mega-menu-2-inner-thumb-btn mb-25">
@@ -253,7 +253,7 @@
                                           <li>
                                              <div class="bd-header-cart-content">
                                                 <div class="bd-header-cart-thumb">
-                                                   <a href="shop-details.html"> <img src="assets/img/shop/9.2.jpg"
+                                                   <a href="shop-details.html"> <img src="/assets/img/shop/9.2.jpg"
                                                          alt="img not found!"></a>
                                                 </div>
                                                 <div class="bd-header-cart-title-wrapper">
