@@ -84,12 +84,15 @@ foreach (glob("$directory/*.md") as $filePath) {
 
 // Sort files by date in descending order
 usort($filesData, function ($a, $b) {
-    return strtotime($b['date']) - strtotime($a['date']);
+    if ($a['date'] == $b['date']) {
+        return 0;
+    }
+    return ($a['date'] > $b['date']) ? -1 : 1;
 });
 
 // Iterate over each Markdown file in the directory
 foreach ($filesData as $fileData) {
-    $date = gmdate("d F Y", $fileData['date']);;
+    $date = gmdate("d F Y", $fileData['date']);
     $author = $fileData['author'];
     $title = $fileData['title'];
     $path = $fileData['path'];
@@ -97,7 +100,7 @@ foreach ($filesData as $fileData) {
     // Generate HTML content
     $htmlContent = <<<HTML
 <div class="col-xl-4 col-lg-6 col-md-6 grid-item c-1 c-3 c-4">
-    <div class="bd-blog mb-40 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+    <div class="bd-blog mb-40">
         <a href="article.php?id={$path}">
             <div class="bd-blog-thumb">
                 <img src="news/headers/{$header}" alt="blog image">
