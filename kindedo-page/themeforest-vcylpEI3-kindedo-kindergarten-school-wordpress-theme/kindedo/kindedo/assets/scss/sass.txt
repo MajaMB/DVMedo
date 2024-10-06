@@ -1,0 +1,1 @@
+sass --watch C:\xampp\htdocs\wp\kindedo\wp-content\themes\kindedo\assets\scss\main.scss:C:\xampp\htdocs\wp\kindedo\wp-content\themes\kindedo\assets\css\kindedo-core.css

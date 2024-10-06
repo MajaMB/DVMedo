@@ -6,3 +6,5 @@
 /.vs
 /VrticMedo/MobileApp/bin/Debug
 /VrticMedo/MobileApp/obj
+﻿.vs
+kindedo-page/dev/team/*.md
