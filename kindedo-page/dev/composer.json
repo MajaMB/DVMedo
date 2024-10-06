@@ -1,7 +1,7 @@
 {
     "require": {
         "erusev/parsedown": "*",
-        "symfony/yaml": "*",
+        "symfony/yaml": "^7.1",
         "spatie/yaml-front-matter": "*"
     }
 }

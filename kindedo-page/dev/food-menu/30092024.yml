@@ -1,0 +1,65 @@
+ponedjeljak:
+  dorucak:
+    objed: "Zobene pahuljice sa šumskim voćem, medom i cimetom, kakao s čokoladom u prahu"
+    alergeni: "Gluten(T), Kikiriki(T), Celer(T), Goruščica(T), Laktoza(S), Mlijeko(S), Soja(S), Mlijeko(T), Orašidi(T)"
+  jutarnjaUzina:
+    objed: "jabuka"
+    alergeni: ""
+  rucak: 
+    objed: "Kupus salata, krem juha od graška, rižoto s puretinom i povrćem, petit buere"
+    alergeni: "Sumporni dioksid(S), Laktoza(T), Mlijeko(S), Celer(T), Gluten(T), Celer(S), Laktoza(S), Gluten(S), Sezam(T)"
+  popodnevnaUzina: 
+    objed: "Kruh s sirnim namazom i vlascem"
+    alergeni: "Sumporni dioksid(S), Laktoza(S), Mlijeko(S), Gluten(S), Jaja(T), Sezam(S), Lupina(T), Soja(S), Mlijeko(T)"
+utorak:
+  dorucak:
+    objed: "Zobene pahuljice sa šumskim voćem, medom i cimetom, kakao s čokoladom u prahu"
+    alergeni: "Gluten(T), Kikiriki(T), Celer(T), Goruščica(T), Laktoza(S), Mlijeko(S), Soja(S), Mlijeko(T), Orašidi(T)"
+  jutarnjaUzina:
+    objed: "jabuka"
+    alergeni: ""
+  rucak: 
+    objed: "Kupus salata, krem juha od graška, rižoto s puretinom i povrćem, petit buere"
+    alergeni: "Sumporni dioksid(S), Laktoza(T), Mlijeko(S), Celer(T), Gluten(T), Celer(S), Laktoza(S), Gluten(S), Sezam(T)"
+  popodnevnaUzina: 
+    objed: "Kruh s sirnim namazom i vlascem"
+    alergeni: "Sumporni dioksid(S), Laktoza(S), Mlijeko(S), Gluten(S), Jaja(T), Sezam(S), Lupina(T), Soja(S), Mlijeko(T)"
+srijeda:
+  dorucak:
+    objed: "Zobene pahuljice sa šumskim voćem, medom i cimetom, kakao s čokoladom u prahu"
+    alergeni: "Gluten(T), Kikiriki(T), Celer(T), Goruščica(T), Laktoza(S), Mlijeko(S), Soja(S), Mlijeko(T), Orašidi(T)"
+  jutarnjaUzina:
+    objed: "jabuka"
+    alergeni: ""
+  rucak: 
+    objed: "Kupus salata, krem juha od graška, rižoto s puretinom i povrćem, petit buere"
+    alergeni: "Sumporni dioksid(S), Laktoza(T), Mlijeko(S), Celer(T), Gluten(T), Celer(S), Laktoza(S), Gluten(S), Sezam(T)"
+  popodnevnaUzina: 
+    objed: "Kruh s sirnim namazom i vlascem"
+    alergeni: "Sumporni dioksid(S), Laktoza(S), Mlijeko(S), Gluten(S), Jaja(T), Sezam(S), Lupina(T), Soja(S), Mlijeko(T)"
+cetvrtak:
+  dorucak:
+    objed: "Zobene pahuljice sa šumskim voćem, medom i cimetom, kakao s čokoladom u prahu"
+    alergeni: "Gluten(T), Kikiriki(T), Celer(T), Goruščica(T), Laktoza(S), Mlijeko(S), Soja(S), Mlijeko(T), Orašidi(T)"
+  jutarnjaUzina:
+    objed: "jabuka"
+    alergeni: ""
+  rucak: 
+    objed: "Kupus salata, krem juha od graška, rižoto s puretinom i povrćem, petit buere"
+    alergeni: "Sumporni dioksid(S), Laktoza(T), Mlijeko(S), Celer(T), Gluten(T), Celer(S), Laktoza(S), Gluten(S), Sezam(T)"
+  popodnevnaUzina: 
+    objed: "Kruh s sirnim namazom i vlascem"
+    alergeni: "Sumporni dioksid(S), Laktoza(S), Mlijeko(S), Gluten(S), Jaja(T), Sezam(S), Lupina(T), Soja(S), Mlijeko(T)"
+petak:
+  dorucak:
+    objed: "Zobene pahuljice sa šumskim voćem, medom i cimetom, kakao s čokoladom u prahu"
+    alergeni: "Gluten(T), Kikiriki(T), Celer(T), Goruščica(T), Laktoza(S), Mlijeko(S), Soja(S), Mlijeko(T), Orašidi(T)"
+  jutarnjaUzina:
+    objed: "jabuka"
+    alergeni: ""
+  rucak: 
+    objed: "Kupus salata, krem juha od graška, rižoto s puretinom i povrćem, petit buere"
+    alergeni: "Sumporni dioksid(S), Laktoza(T), Mlijeko(S), Celer(T), Gluten(T), Celer(S), Laktoza(S), Gluten(S), Sezam(T)"
+  popodnevnaUzina: 
+    objed: "Kruh s sirnim namazom i vlascem"
+    alergeni: "Sumporni dioksid(S), Laktoza(S), Mlijeko(S), Gluten(S), Jaja(T), Sezam(S), Lupina(T), Soja(S), Mlijeko(T)"

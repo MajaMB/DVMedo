@@ -7375,9 +7375,11 @@ i[class^=flaticon-] {
 }
 .bd-routine-2 .table > :not(caption) > * > *.clr-4 {
   background-color: var(--bd-theme-8);
+  color: var(--bd-common-black);
 }
 .bd-routine-2 .table > :not(caption) > * > *.clr-5 {
   background-color: var(--bd-theme-6);
+  color: var(--bd-common-black);
 }
 .bd-routine-2 .table > :not(caption) > * > *.clr-6 {
   background-color: var(--bd-theme-10);
