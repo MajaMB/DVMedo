@@ -7493,6 +7493,7 @@ i[class^=flaticon-] {
 .bd-routine-table {
   border-radius: 24px;
   overflow: hidden;
+  width: 100%;
 }
 .bd-routine-table .table {
   margin-bottom: 0;
