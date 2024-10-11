@@ -30,5 +30,4 @@ function renderTeacherSlide($teacherName, $position, $imageName) {
     // include 'components/team-member-tile.php';
     // echo renderTeacherSlide('Dajana B.', 'Ravnateljica', '5.jpg');
     // echo renderTeacherSlide('John Doe', 'Math Teacher', 'john.jpg');
-    ?>
-   ?>
+?>
