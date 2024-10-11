@@ -19,7 +19,7 @@
                      <div class="bd-hero-content">
                         <span class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">Maria Montessori</span>
                         <h1 class="bd-hero-title wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-                        Pomozi mi da to učinim sam
+                        Pomozi mi da to učinim sam!
                         </h1>
                         <div class="bd-hero-btn wow fadeInUp" data-wow-duration="1s" data-wow-delay=".7s">
                            <a href="enrolment.php" class="bd-btn">
@@ -62,35 +62,10 @@
       </section>
       <!-- hero area end here  -->
 
-      <!-- class area start here -->
-      <!-- <section class="bd-class-area pt-110 pb-120">
-         <div class="container">
-            <div class="row justify-content-center">
-               <div class="col-lg-8">
-                  <div class="bd-section-title-wrapper text-center mb-55 wow fadeInUp" data-wow-duration="1s"
-                     data-wow-delay=".2s">
-                     <h2 class="bd-section-title mb-0">Što nudimo</h2>
-                     <p>Naš vrtić namjenjen je djeci u dobnim skupinama od 1-6 godina<br> s kurikulimom prilagođenim djeci.</p>
-                  </div>
-               </div>
-            </div>
-             <div class="row">
-               <div class="col-12">
-                  <div class="bd-class-active swiper-container wow fadeInUp" data-wow-duration="1s"
-                     data-wow-delay=".4s">
-                     <div class="swiper-wrapper">
-                        add addWhatWeOffer calls from components/we-offer-tile.php
-                     </div>
-                  </div>
-                  <div class="bd-class-pagination bd-dots-pagination"></div>
-               </div>
-            </div>
-         </div>
-      </section> -->
-      <!-- class area end here -->
+
 
       <!-- promotion area start here  -->
-      <!-- <section class="bd-promotion-area pb-60" id="bd-promotion-area">
+      <section class="bd-promotion-area pb-60" id="bd-promotion-area">
          <div class="container">
             <div class="row align-items-center">
                <div class="col-xl-6 col-lg-6">
@@ -99,7 +74,7 @@
                      <div class="bd-promotion-thumb">
                         <div class="bd-promotion-thumb-mask p-relative wow fadeInLeft" data-wow-duration="1s"
                            data-wow-delay=".3s">
-                           <img src="assets/img/promotion/1.png" alt="Image not found">
+                           <img src="assets/img/promotion/1.jpg" alt="Image not found">
                            <div class="panel wow"></div>
                         </div>
                      </div>
@@ -111,7 +86,8 @@
                <div class="col-xl-6 col-lg-6">
                   <div class="bd-promotion mb-60 wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
                      <div class="bd-section-title-wrapper mb-35">
-                        <h2 class="bd-section-title mb-10">Best for Your Kids</h2>
+                        <span></span>
+                        <h2 class="bd-section-title mb-10">Upisi u tijeku!</h2>
                         <p> Being brave isn’t always a grand gesture sometimes it just means having a go attempting
                            that difficult question, offering an answer in a lesson when you’re
                            simply really trying new.
@@ -120,57 +96,43 @@
                      <div class="bd-promotion-counter-wrapper mb-40">
                         <div class="bd-promotion-counter">
                            <div class="bd-promotion-counter-number">
-                              <p><span class="counter">14</span>+</p>
+                              <p><span class="counter">3</span></p>
                            </div>
                            <div class="bd-promotion-counter-text">
-                              <span>Years of</span>
-                              <span>experience</span>
-                           </div>
-                        </div>
-                        <div class="bd-promotion-counter">
-                           <div class="bd-promotion-counter-number">
-                              <p><span><span class="counter">7</span>K</span>+</p>
-                           </div>
-                           <div class="bd-promotion-counter-text">
-                              <span>Students</span>
-                              <span>each year</span>
-                           </div>
-                        </div>
-                        <div class="bd-promotion-counter">
-                           <div class="bd-promotion-counter-number">
-                              <p><span class="counter">15</span>+</p>
-                           </div>
-                           <div class="bd-promotion-counter-text">
-                              <span>Award</span>
-                              <span>Wining</span>
+                              <span>Grupe</span>
+                              <span>Upisi otvoreni cijele godine</span>
                            </div>
                         </div>
                      </div>
                      <div class="bd-promotion-list mb-50">
                         <ul>
-                           <li>We believe every child is intelligent so we care.</li>
-                           <li>Teachers make a difference of your child.</li>
+                           <li>Mi vjerujemo da je svako dijete posebno. Mi brinemo.</li>
+                           <li>Odgajatelji čine razliku u djetetovom životu.</li>
                         </ul>
                      </div>
                      <div class="bd-promotion-btn-wrapper flex-wrap">
                         <div class="bd-promotion-btn">
-                           <a href="#" class="bd-btn">
+                           <a href="enrolment.php" class="bd-btn">
                               <span class="bd-btn-inner">
-                                 <span class="bd-btn-normal">View More</span>
-                                 <span class="bd-btn-hover">View More</span>
+                                 <span class="bd-btn-normal">Više o upisima</span>
+                                 <span class="bd-btn-hover">Više o upisima</span>
                               </span>
                            </a>
                         </div>
-                        <div class="bd-promotion-btn-2 bd-pulse-btn btn-2">
-                           <a href="https://www.youtube.com/watch?v=l62SIcbCPwo" class="popup-video"><i
-                                 class="flaticon-play-button"></i> Promotional Video</a>
+                        <div class="bd-promotion-btn">
+                           <a href="/documents/others/prijavnica.pdf" class="bd-btn">
+                              <span class="bd-btn-inner">
+                                 <span class="bd-btn-normal">Preuzmi prijavnicu</span>
+                                 <span class="bd-btn-hover">Preuzmi prijavnicu</span>
+                              </span>
+                           </a>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
          </div>
-      </section> -->
+      </section>
       <!-- promotion area end here  -->
 
       <!-- program area start here  -->
@@ -314,45 +276,6 @@
       </section>
       <!-- program area end here -->
 
-      <!-- joining area start here  -->
-      <!-- <section class="bd-joining-area pt-100 pb-100">
-         <div class="bd-joining-bg" data-background="assets/img/bg/joining-area.png"></div>
-         <div class="bd-joining-bg-overlay"></div>
-         <div class="container">
-            <div class="bd-joining">
-               <div class="bd-joining-shape-wrapper d-none d-md-block">
-                  <div class="bd-joining-shape-1 p-absolute">
-                     <img src="assets/img/shape/white-curved-line.png" alt="img not found!">
-                  </div>
-                  <div class="bd-joining-shape-2 p-absolute">
-                     <img src="assets/img/shape/white-curved-line.png" alt="img not found!">
-                  </div>
-               </div>
-               <div class="row justify-content-center">
-                  <div class="col-md-8">
-                     <div class="bd-joining-content text-center wow fadeInUp" data-wow-duration="1s"
-                        data-wow-delay=".3s">
-                        <div class="bd-section-title-wrapper is-white mb-45">
-                           <h2 class="bd-section-title mb-0">Join Our New Session</h2>
-                           <p>Kindedo believes that good questions drive good answers. Whether it's a query<br> about
-                              the world around us or a challenge.</p>
-                        </div>
-                        <a href="classes.html" class="bd-btn btn-white">
-                           <span class="bd-btn-inner">
-                              <span class="bd-btn-normal">Apply now</span>
-                              <span class="bd-btn-hover">Apply now</span>
-                           </span>
-                        </a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="bd-joining-line"></div>
-         <div class="bd-joining-line-2"></div>
-      </section> -->
-      <!-- joining area end here  -->
-
       <!-- teacher area start here  -->
       <section class="bd-teacher-area pt-120 pb-120">
          <div class="container">
@@ -435,115 +358,6 @@
       </section>
       <!-- teacher area end here  -->
 
-      <!-- testimonial area start here  -->
-      <section class="bd-testimonial-area theme-bg">
-         <div class="bd-testimonial-video" data-background="assets/img/bg/testimonail-bg.png">
-            <div class="bd-testimonial-video-btn bd-pulse-btn">
-               <a href="https://www.youtube.com/watch?v=INY3ETimTjg" class="popup-video"><i
-                     class="flaticon-play-button"></i></a>
-            </div>
-         </div>
-         <div class="bd-testimonial-bg d-none d-lg-block" data-background="assets/img/bg/bg-shape.jpg"></div>
-         <div class="container">
-            <div class="row justify-content-end align-items-center">
-               <div class="col-lg-6">
-                  <div class="bd-testimonial-wrapper pt-120 pb-120">
-                     <div class="bd-section-title-wrapper is-white mb-20 wow fadeInUp" data-wow-duration="1s"
-                        data-wow-delay=".3s">
-                        <h2 class="bd-section-title mb-0">Parents Says</h2>
-                     </div>
-                     <div class="bd-testimonial-active swiper-container wow fadeInUp" data-wow-duration="1s"
-                        data-wow-delay=".5s">
-                        <div class="swiper-wrapper">
-                           <div class="swiper-slide">
-                              <div class="bd-testimonial">
-                                 <div class="bd-testimonial-rating mb-30">
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                 </div>
-                                 <div class="bd-testimonial-content mb-55">
-                                    <p>Happy Christmas to the whole Kindedo from everyone at Monkton. A big thank you to
-                                       Kindedo pupil Will who lent his Kindedo to this card. </p>
-
-                                 </div>
-                                 <div class="bd-testimonial-avatar d-flex align-items-center">
-                                    <div class="bd-testimonial-avatar-thumb">
-                                       <img src="assets/img/testimonials/1.png" alt="testimonial avatar">
-                                    </div>
-                                    <h6 class="bd-testimonial-avatar-title mb-0">Norma J. Johnston</h6>
-                                    <div class="bd-testimonial-quote">
-                                       <i class="flaticon-quote
-                                       "></i>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="swiper-slide">
-                              <div class="bd-testimonial">
-                                 <div class="bd-testimonial-rating mb-30">
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                 </div>
-                                 <div class="bd-testimonial-content mb-55">
-                                    <p>Your child will laugh, play and explore at Summer at MLS. From soccer, water
-                                       play, art, music, theater and science, Shabbat celebrations, cooking.</p>
-
-                                 </div>
-                                 <div class="bd-testimonial-avatar d-flex align-items-center">
-                                    <div class="bd-testimonial-avatar-thumb">
-                                       <img src="assets/img/testimonials/3.png" alt="testimonial avatar">
-                                    </div>
-                                    <h6 class="bd-testimonial-avatar-title mb-0">Mateo D. Daniel</h6>
-                                    <div class="bd-testimonial-quote">
-                                       <i class="flaticon-quote
-                                       "></i>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="swiper-slide">
-                              <div class="bd-testimonial">
-                                 <div class="bd-testimonial-rating mb-30">
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                 </div>
-                                 <div class="bd-testimonial-content mb-55">
-                                    <p>The unique Mentone Grammar Community is our point of difference compared to many
-                                       in the industry. The School often talks about the concept.
-                                 </div>
-                                 <div class="bd-testimonial-avatar d-flex align-items-center">
-                                    <div class="bd-testimonial-avatar-thumb">
-                                       <img src="assets/img/testimonials/2.png" alt="testimonial avatar">
-                                    </div>
-                                    <h6 class="bd-testimonial-avatar-title mb-0">Michael M. Mason</h6>
-                                    <div class="bd-testimonial-quote">
-                                       <i class="flaticon-quote
-                                       "></i>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- slider dots pagination -->
-                     <div class="bd-testimonial-pagination bd-dots-pagination justify-content-start wow fadeInUp"
-                        data-wow-duration="1s" data-wow-delay=".4s"></div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- testimonial area end here  -->
-
       <!-- blog area start here  -->
       <section class="bd-blog-area pt-120 pb-120">
          <div class="container">
@@ -552,10 +366,8 @@
                   <div class="col-lg-6">
                      <div class="bd-section-title-wrapper mb-0 wow fadeInLeft" data-wow-duration="1s"
                         data-wow-delay=".3s">
-                        <h2 class="bd-section-title mb-0">Kindedo News</h2>
-                        <p>It is our goal to provide age appropriate opportuniy for every child enrolled in Kindedo Kids
-                           Club
-                           enrichment classes.</p>
+                        <h2 class="bd-section-title mb-0">Najnovije obavijesti</h2>
+                        <p>Naš cilj je svakom djetetu ponuditi priliku da postigne svoj potencijal.</p>
                      </div>
                   </div>
                   <div class="col-lg-6">
@@ -574,72 +386,12 @@
                <div class="col-12">
                   <div class="bd-blog-active swiper-container wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                      <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                           <div class="bd-blog">
-                              <a href="news-details.html">
-                                 <div class="bd-blog-thumb">
-                                    <img src="assets/img/blog/2.jpg" alt="blog image">
-                                 </div>
-                              </a>
-                              <div class="bd-blog-content">
-                                 <div class="bd-blog-date">
-                                    <span>22 Jan 2022</span>
-                                 </div>
-                                 <div class="bd-blog-meta">
-                                    <span><i class="fas fa-user"></i> by <a href="news.html">Alex</a></span>
-                                    <span><i class="fa-solid fa-comment-dots"></i><a href="news-details.html">0
-                                          Comments</a></span>
-                                 </div>
-                                 <h4 class="bd-blog-title"><a href="news-details.html">Tips to Understand Your Child
-                                       Better -
-                                       A
-                                       Guide for Parents!</a></h4>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="swiper-slide">
-                           <div class="bd-blog">
-                              <a href="news-details.html">
-                                 <div class="bd-blog-thumb">
-                                    <img src="assets/img/blog/4.jpg" alt="blog image">
-                                 </div>
-                              </a>
-                              <div class="bd-blog-content">
-                                 <div class="bd-blog-date">
-                                    <span>22 Nov 2022</span>
-                                 </div>
-                                 <div class="bd-blog-meta">
-                                    <span><i class="fas fa-user"></i> by <a href="news.html">Alex</a></span>
-                                    <span><i class="fa-solid fa-comment-dots"></i><a href="news-details.html">04
-                                          Comments</a></span>
-                                 </div>
-                                 <h4 class="bd-blog-title"><a href="news-details.html">Why Toys for Preschoolers are
-                                       Important - a small ready setup</a></h4>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="swiper-slide">
-                           <div class="bd-blog">
-                              <a href="news-details.html">
-                                 <div class="bd-blog-thumb">
-                                    <img src="assets/img/blog/3.jpg" alt="blog image">
-                                 </div>
-                              </a>
-                              <div class="bd-blog-content">
-                                 <div class="bd-blog-date">
-                                    <span>22 Dec 2022</span>
-                                 </div>
-                                 <div class="bd-blog-meta">
-                                    <span><i class="fas fa-user"></i> by <a href="news.html">Alex</a></span>
-                                    <span><i class="fa-solid fa-comment-dots"></i><a href="news-details.html">02
-                                          Comments</a></span>
-                                 </div>
-                                 <h4 class="bd-blog-title"><a href="news-details.html">Which Toys are Best for Preschool
-                                       Kids in USA: A Quick Guide
-                                    </a></h4>
-                              </div>
-                           </div>
-                        </div>
+                        <?php
+                        // todo: include code to fetxh number of latest news
+                        include ('components/news-swiper-slide-tile.php');
+                        include ('components/news-swiper-slide-tile.php');
+                        include ('components/news-swiper-slide-tile.php');
+                        ?>
                      </div>
                   </div>
                </div>
