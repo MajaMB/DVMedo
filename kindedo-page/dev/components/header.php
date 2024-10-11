@@ -211,7 +211,7 @@
                                  </ul>
                               </li>
                               <li>
-                                 <a href="news.html">Obavjesti</a>
+                                 <a href="news.php">Obavijesti</a>
                               </li>
                               <li>
                                  <a href="for-parents.php">Kutić za roditelje</a>

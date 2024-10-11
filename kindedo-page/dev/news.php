@@ -18,10 +18,10 @@
                <div class="col-xl-10">
                   <div class="bd-breadcrumb d-flex align-items-center justify-content-center">
                      <div class="bd-breadcrumb-content text-center">
-                        <h1 class="bd-breadcrumb-title">Obavjesti</h1>
+                        <h1 class="bd-breadcrumb-title">Obavijesti</h1>
                         <div class="bd-breadcrumb-list">
                            <span><a href="/index.php"><i class="flaticon-hut"></i>Vrtic Medo</a></span>
-                           <span>Obavjesti</span>
+                           <span>Obavijesti</span>
                         </div>
                      </div>
                   </div>

@@ -43,4 +43,4 @@ function renderBreadcrumbArea($siteName, $subtitele = "") {
     // Example usage
     // include 'components/breadcrumb-area.php';
     // echo renderBreadcrumbArea('About us', 'Rando subtitle');
-?>
+ ?>

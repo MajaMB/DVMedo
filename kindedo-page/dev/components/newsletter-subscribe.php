@@ -38,7 +38,7 @@
                      <div class="bd-newsletter-content">
                         <div class="bd-section-title-wrapper text-center is-white mb-45">
                            <h2 class="bd-section-title mb-0">Pretplatite se</h2>
-                           <p>Pretplatite se kako biste dobili najnovije obavjesti.</p>
+                           <p>Pretplatite se kako biste dobili najnovije obavijesti.</p>
                         </div>
                         <div class="bd-newsletter-form">
                            <form action="#"> <!-- todo:  call subscribe acion -->
