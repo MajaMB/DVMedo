@@ -31,46 +31,56 @@
 
 <main>
     <span></span>
-    <div class="col-12">
-        <div class="bd-routine-2-nav">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="all-class-tab-Ovaj_tjedan" data-bs-toggle="tab" data-bs-target="#all-class-Ovaj_tjedan" type="button" role="tab" aria-controls="all-class-Ovaj_tjedan" aria-selected="true">
-                        <?php echo $currentWeekRange['start'] . ' - ' . $currentWeekRange['end']; ?>
-                    </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="all-class-tab-Idući_tjedan" data-bs-toggle="tab" data-bs-target="#all-class-Idući_tjedan" type="button" role="tab" aria-controls="all-class-Idući_tjedan" aria-selected="false">
-                        <?php echo $nextWeekRange['start'] . ' - ' . $nextWeekRange['end']; ?>
-                    </button>
-                </li>
-            </ul>
-        </div>
+    <section class="bd-routine-2-area pt-120 pb-120">
+        <div class="container">
+            <div class="bd-routine-2-wrapper wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="bd-routine-2-nav">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="all-class-tab-Ovaj_tjedan" data-bs-toggle="tab" data-bs-target="#all-class-Ovaj_tjedan" type="button" role="tab" aria-controls="all-class-Ovaj_tjedan" aria-selected="true">
+                                        <?php echo $currentWeekRange['start'] . ' - ' . $currentWeekRange['end']; ?>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="all-class-tab-Idući_tjedan" data-bs-toggle="tab" data-bs-target="#all-class-Idući_tjedan" type="button" role="tab" aria-controls="all-class-Idući_tjedan" aria-selected="false">
+                                        <?php echo $nextWeekRange['start'] . ' - ' . $nextWeekRange['end']; ?>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
 
-        <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade active show" id="all-class-Ovaj_tjedan" role="tabpanel" aria-labelledby="all-class-tab-Ovaj_tjedan">
-                <style></style>
-                <?php 
-                    include 'components/meal-schedule.php';
-                    if (file_exists($currentWeekFile)) {
-                        echo renderMealSchedule($currentWeekFile);
-                    } else {
-                        echo "<h4 class='centered-message'>Meni za odabrani tjedan trenutno nije dostupan</h4>";
-                    }
-                ?>
-            </div>
-            <div class="tab-pane fade" id="all-class-Idući_tjedan" role="tabpanel" aria-labelledby="all-class-tab-Idući_tjedan">
-                <style></style>
-                <?php 
-                    if (file_exists($nextWeekFile)) {
-                        echo renderMealSchedule($nextWeekFile);
-                    } else {
-                        echo "<h4 class='centered-message'>Meni za odabrani tjedan trenutno nije dostupan</h4>";
-                    }
-                ?>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade active show" id="all-class-Ovaj_tjedan" role="tabpanel" aria-labelledby="all-class-tab-Ovaj_tjedan">
+                                <div class="bd-routine-2">
+                                    <?php 
+                                        include 'components/meal-schedule.php';
+                                        if (file_exists($currentWeekFile)) {
+                                            echo renderMealSchedule($currentWeekFile);
+                                        } else {
+                                            echo "<h4 class='centered-message'>Meni za odabrani tjedan trenutno nije dostupan</h4>";
+                                        }
+                                    ?>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="all-class-Idući_tjedan" role="tabpanel" aria-labelledby="all-class-tab-Idući_tjedan">
+                                <div class="bd-routine-2">
+                                    <?php 
+                                        if (file_exists($nextWeekFile)) {
+                                            echo renderMealSchedule($nextWeekFile);
+                                        } else {
+                                            echo "<h4 class='centered-message'>Meni za odabrani tjedan trenutno nije dostupan</h4>";
+                                        }
+                                    ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>               
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 </main>
 
 <?php include('components/footer.php'); ?>
