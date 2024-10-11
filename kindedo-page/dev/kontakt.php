@@ -44,8 +44,9 @@
                      <div class="bd-contact-info">
                         <div class="bd-contact-info-content">
                            <div class="bd-contact-info-icon cat-1">
-                              <a href="tel:042208000"><i class="flaticon-phone-call"></i></a>
+                              <a href="tel:+385 92 4456 554"><i class="flaticon-phone-call"></i></a>
                            </div>
+                           <h6><a href="tel:042208000">+385 92 4456 554</a></h6>
                            <h6><a href="tel:042208000">042/ 208 – 000</a></h6>
                         </div>
                      </div>
@@ -58,7 +59,7 @@
                            <div class="bd-contact-info-icon cat-2">
                               <a href="https://www.google.com/maps/search/?api=1&query=Varaždinska+ulica+12,+Otok+Virje,+42208+Cestica" target="_blank"><i class="flaticon-location-pin"></i></a>
                            </div>
-                           <h6><a href="https://www.google.com/maps/search/?api=1&query=Varaždinska+ulica+12,+Otok+Virje,+42208+Cestica" target="_blank">Varaždinska ulica 12, Otok Virje </br>42208 Cestica</a></h6>
+                           <h6><a href="https://www.google.com/maps/search/?api=1&query=Varaždinska+ulica+12,+Otok+Virje,+42208+Cestica" target="_blank">Vrtić Medo </br>Varaždinska ulica 12, Otok Virje </br>42208 Cestica</a></h6>
                         </div>
                      </div>
                   </div>
@@ -112,10 +113,10 @@
                                  <label for="subject">Predmet <sup><i
                                           class="fa-solid fa-star-of-life"></i></sup></label>
                                  <select name="subject" id="subject" class="bd-nice-select">
-                                    <option>Odaberite predmet</option>
+                                    <option value="" disabled selected>Odaberite predmet</option>
+                                    <option>Upisi</option>
                                     <option>Jaslice</option>
                                     <option>Vrtić</option>
-                                    <option>Predškola</option>
                                     <option>Ostalo</option>
                                  </select>
                               </div>

@@ -783,7 +783,7 @@ bdOnLoadAnim('bd-faq-area','active-anim','35%');
 		},
 		breakpoints: {
 			'1200': {
-				slidesPerView: 3,
+				slidesPerView: 2,
 			},
 			'992': {
 				slidesPerView: 2,
