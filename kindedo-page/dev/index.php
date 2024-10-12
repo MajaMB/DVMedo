@@ -234,7 +234,7 @@
                   <div class="bd-section-title-wrapper text-center mb-55 wow fadeInUp" data-wow-duration="1s"
                      data-wow-delay=".3s">
                      <h2 class="bd-section-title mb-0">Naš tim</h2>
-                     <p>Uz pomoć naših zaposlenika i okruženja, djeca  imaju priliku <br>s povjerenjem preuzimati rizike.  </p>
+                     <p>Uz pomoć naših zaposlenika i okruženja, djeca imaju priliku <br>s povjerenjem preuzimati rizike.  </p>
                   </div>
                </div>
             </div>
@@ -245,61 +245,15 @@
                      <div class="swiper-wrapper">
                         <?php
                         include 'components/team-member-tile.php';
-                        echo renderTeacherSlide('Dajana B.', 'Ravnateljica', '5.jpg');
-                        echo renderTeacherSlide('John Doe', 'Math Teacher', 'john.jpg');
+                        $directoryPath = 'djelatnici';
+                        $markdownFiles = glob($directoryPath . '/*.md');
+                        foreach ($markdownFiles as $file) {
+                           echo renderTeacherSlide($file);
+                        }
                         ?>
-                        <div class="swiper-slide">
-                           <div class="bd-teacher">
-                              <a href="teacher-details.html">
-                                 <div class="bd-teacher-thumb">
-                                    <img src="assets/img/teacher/5.jpg" alt="Image not found">
-                                 </div>
-                              </a>
-                              <div class="bd-teacher-content-wrapper">
-                                 <div class="bd-teacher-content">
-                                    <h4 class="bd-teacher-title"><a href="teacher-details.html">Dajana B.</a></h4>
-                                    <span class="bd-teacher-des">Ravnateljica</span>
-                                 </div>
-                                 <div class="bd-teacher-social"><ul></ul></div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="swiper-slide">
-                           <div class="bd-teacher">
-                              <a href="teacher-details.html">
-                                 <div class="bd-teacher-thumb">
-                                    <img src="assets/img/teacher/5.jpg" alt="Image not found">
-                                 </div>
-                              </a>
-                              <div class="bd-teacher-content-wrapper">
-                                 <div class="bd-teacher-content">
-                                    <h4 class="bd-teacher-title"><a href="teacher-details.html">Dajana B.</a></h4>
-                                    <span class="bd-teacher-des">Ravnateljica</span>
-                                 </div>
-                                 <div class="bd-teacher-social"><ul></ul></div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="swiper-slide">
-                           <div class="bd-teacher">
-                              <a href="teacher-details.html">
-                                 <div class="bd-teacher-thumb">
-                                    <img src="assets/img/teacher/5.jpg" alt="Image not found">
-                                 </div>
-                              </a>
-                              <div class="bd-teacher-content-wrapper">
-                                 <div class="bd-teacher-content">
-                                    <h4 class="bd-teacher-title"><a href="teacher-details.html">Dajana B.</a></h4>
-                                    <span class="bd-teacher-des">Ravnateljica</span>
-                                 </div>
-                                 <div class="bd-teacher-social"><ul></ul></div>
-                              </div>
-                           </div>
-                        </div>
                         
                      </div>
                   </div>
-
                   <!-- teacher slider dots pagination  -->
                   <div class="bd-teacher-pagination bd-dots-pagination"></div>
                </div>
