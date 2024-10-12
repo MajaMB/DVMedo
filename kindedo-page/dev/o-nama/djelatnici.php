@@ -6,7 +6,7 @@
 
 
     // Define the path to the directory containing the markdown files
-    $directoryPath = 'djelatnici';
+    $directoryPath = __DIR__ . '/../djelatnici';
 
     // Use glob to find all .md files in the directory
     $markdownFiles = glob($directoryPath . '/*.md');
