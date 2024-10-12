@@ -1,7 +1,7 @@
 <?php 
-    include('components/header.php');
-    include('components/breadcrumb-area.php');
-    include('components/team-member-detail.php');
+    include('../components/header.php');
+    include('../components/breadcrumb-area.php');
+    include('../components/team-member-detail.php');
     echo renderBreadcrumbArea('Naš tim');
 
 
@@ -19,7 +19,7 @@
             echo renderTeamDetail($file);
         }
         
-        include('components/newsletter-subscribe.php');
-        include('components/footer.php'); 
+        include('../components/newsletter-subscribe.php');
+        include('../components/footer.php'); 
     ?>
 </section>

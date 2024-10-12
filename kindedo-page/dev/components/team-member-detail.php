@@ -1,11 +1,14 @@
 <?php
 
-require __DIR__ . '/../vendor/autoload.php';
+require 'vendor/autoload.php';
 
 use Symfony\Component\Yaml\Yaml;
 use Spatie\YamlFrontMatter\YamlFrontMatter;
 
+
 function renderTeamDetail($teacherFile) {
+    $directory = './../djelatnici';
+
     // Read the contents of the markdown file
     $content = file_get_contents($teacherFile);
 
@@ -20,7 +23,7 @@ function renderTeamDetail($teacherFile) {
     $imageName = $yaml['slika'];
     $email = $yaml['mail'];
     $fileName = pathinfo($teacherFile, PATHINFO_FILENAME);
-    
+
     // Ensure input is safely echoed
     $safeTeacherName = htmlspecialchars($teacherName, ENT_QUOTES, 'UTF-8');
     $safePosition = htmlspecialchars($position, ENT_QUOTES, 'UTF-8');
@@ -36,7 +39,7 @@ function renderTeamDetail($teacherFile) {
             <div class="col-lg-6 mb-50">
                 <div class="bd-teacher-widget wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">
                     <div class="bd-teacher-widget-thumb p-relative">
-                        <img src="../djelatnici/slike/{$safeImageName}" alt="img not found!">
+                        <img src="$directory/slike/{$safeImageName}" alt="img not found!">
                         <div class="panel wow"></div>
                     </div>
                 </div>
@@ -58,7 +61,7 @@ function renderTeamDetail($teacherFile) {
 
 // Example usage
 // include 'components/team-member-detail.php';
-// echo renderTeamDetail('src/djelatnici/dajana.md');
-// echo renderTeamDetail('src/djelatnici/ivana.md');
+// echo renderTeamDetail('djelatnici/dajana.md');
+// echo renderTeamDetail('djelatnici/ivana.md');
 ?>
 
