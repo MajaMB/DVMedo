@@ -1,8 +1,12 @@
 <?php
-function renderBreadcrumbArea($siteName, $subtitele = "") {
+require_once __DIR__ . '/../config.php';
+function renderBreadcrumbArea($siteName, $subtitle = "") {
     // Ensure input is safely echoed
     $safeSiteName = htmlspecialchars($siteName, ENT_QUOTES, 'UTF-8');
-    $safeSubtitele = htmlspecialchars($subtitele, ENT_QUOTES, 'UTF-8');
+    $safeSubtitle = htmlspecialchars($subtitle, ENT_QUOTES, 'UTF-8');
+
+    $shape1 = genFilePath('assets/img/shape/curved-line-2.png');
+    $shape2 = genFilePath('assets/img/shape/white-curved-line.png');
 
     return <<<HTML
       <section class="bd-breadcrumb-area p-relative fix theme-bg">
@@ -12,10 +16,10 @@ function renderBreadcrumbArea($siteName, $subtitele = "") {
             <div class="container">
                <div class="bd-breadcrumb-shape d-none d-sm-block p-relative">
                   <div class="bd-breadcrumb-shape-1">
-                     <img src="assets/img/shape/curved-line-2.png" alt="img not found!">
+                     <img src="{$shape1}" alt="img not found!">
                   </div>
                   <div class="bd-breadcrumb-shape-2">
-                     <img src="assets/img/shape/white-curved-line.png" alt="img not found!">
+                     <img src="{$shape2}" alt="img not found!">
                   </div>
                </div>
                <div class="row justify-content-center">
@@ -24,7 +28,7 @@ function renderBreadcrumbArea($siteName, $subtitele = "") {
                         <div class="bd-breadcrumb-content text-center">
                            <h1 class="bd-breadcrumb-title">{$safeSiteName}</h1>
                            <div>
-                              <span>{$safeSubtitele}</span>
+                              <span>{$safeSubtitle}</span>
                            </div>
                         </div>
                      </div>

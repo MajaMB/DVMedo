@@ -1,8 +1,11 @@
 <?php 
-    include('../components/header.php'); 
-    include('../components/breadcrumb-area.php');
+    include(__DIR__ . '/../components/header.php');
+    include(__DIR__ . '/../components/breadcrumb-area.php');
+    require_once __DIR__ . '/../config.php';
     echo renderBreadcrumbArea('Natječaji');
+?>
 
+<?php
     // Directory containing the documents
     $directory = __DIR__ . '/natjecaji';
 
@@ -32,10 +35,10 @@
                                     <tr>
                                     <td>
                                         <div style="display: flex; justify-content: space-between; align-items: center;">
-                                            <a href="<?php echo '/dokumenti/natjecaji/' . rawurlencode($file); ?>" download style="flex-grow: 1; text-align: left;">
+                                            <a href="<?php echo genFilePath('/dokumenti/natjecaji/' . rawurlencode($file)) ?>" download style="flex-grow: 1; text-align: left;">
                                                 <?php echo htmlspecialchars($file); ?>
                                             </a>
-                                            <a href="<?php echo '/dokumenti/natjecaji/' . rawurlencode($file); ?>" download>
+                                            <a href="<?php echo genFilePath('/dokumenti/natjecaji/' . rawurlencode($file)); ?>" download>
                                                 <i class="fa-solid fa-download"></i>
                                             </a>
                                         </div>
@@ -50,4 +53,4 @@
         </div>
     </section>
 </main>
-<?php include('../components/footer.php'); ?>
+<?php include(__DIR__ . '/../components/footer.php'); ?>
