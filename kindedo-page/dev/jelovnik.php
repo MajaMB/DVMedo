@@ -1,6 +1,6 @@
 <?php 
     #todo: when in small schrene, the table isnt displayed correctly. I want it to turn into a day by day list  
-    include('components/header.php'); 
+    include(__DIR__ . '/components/header.php'); 
     include('components/breadcrumb-area.php');
     echo renderBreadcrumbArea('Jelovnik');
 
@@ -83,4 +83,4 @@
     </section>
 </main>
 
-<?php include('components/footer.php'); ?>
+<?php include(__DIR__ . '/components/footer.php'); ?>

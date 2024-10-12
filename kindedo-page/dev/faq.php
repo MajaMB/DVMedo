@@ -1,4 +1,4 @@
-<?php include('components/header.php'); ?>
+<?php include(__DIR__ . '/components/header.php'); ?>
    <!-- main area start here  -->
    <main>
       <!-- faq area start here  -->
@@ -104,4 +104,4 @@
    </main>
    <!-- main area end here  -->
 
-<?php include('components/footer.php'); ?>
+<?php include(__DIR__ . '/components/footer.php'); ?>

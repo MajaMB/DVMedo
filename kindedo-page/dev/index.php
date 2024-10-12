@@ -1,4 +1,4 @@
-<?php include('components/header.php'); ?>
+<?php include(__DIR__ . '/components/header.php'); ?>
    <!-- main area start here  -->
    <main>
       <!-- hero area start here  -->
@@ -336,12 +336,93 @@
                <div class="col-12">
                   <div class="bd-blog-active swiper-container wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                      <div class="swiper-wrapper">
-                        <?php
-                        // todo: include code to fetxh number of latest news
-                        include ('components/news-swiper-slide-tile.php');
-                        include ('components/news-swiper-slide-tile.php');
-                        include ('components/news-swiper-slide-tile.php');
-                        ?>
+
+                         <?php
+
+                         require 'vendor/autoload.php';
+
+                         use Spatie\YamlFrontMatter\YamlFrontMatter;
+                         // use Parsedown;
+
+                         // Directory containing Markdown files
+                         $directory = __DIR__ . '/news';
+
+
+                         // Array to hold file data
+                         $filesData = [];
+                         // Iterate over each Markdown file in the directory
+                         foreach (glob("$directory/*.md") as $filePath) {
+                             // Load the Markdown file
+                             $markdownContent = file_get_contents($filePath);
+
+                             // Parse the YAML frontmatter
+                             $document = YamlFrontMatter::parse($markdownContent);
+                             $yamlData = $document->matter();
+
+                             // Extract metadata
+                             $date = $yamlData['date'] ?? 0; // Default to a very old date if not set
+                             $author = $yamlData['author'] ?? 'Unknown Author';
+                             $title = $yamlData['title'] ?? 'Untitled';
+                             $header = $yamlData['header'] ?? 'fallback.jpg';
+
+                             // Add file data to the array
+                             $filesData[] = [
+                                 'date' => $date,
+                                 'author' => $author,
+                                 'title' => $title,
+                                 'path' => pathinfo($filePath, PATHINFO_FILENAME),
+                                 'header' => $header,
+                             ];
+                         }
+
+                         // Sort files by date in descending order
+                         usort($filesData, function ($a, $b) {
+                             return strtotime($b['date']) - strtotime($a['date']);
+                         });
+
+                         // Iterate over each Markdown file in the directory
+                         foreach ($filesData as $fileData) {
+                             $date = gmdate("d F Y", $fileData['date']);;
+                             $author = $fileData['author'];
+                             $title = $fileData['title'];
+                             $path = $fileData['path'];
+
+                             $article_link = genFilePath('article.php?id=' . $fileData['path']);
+                             $header_photo = genFilePath('news/headers/' . $fileData['header']);
+
+                             // Generate HTML content
+                             $htmlContent = <<<HTML
+<div class="swiper-slide">
+    <div class="bd-blog">
+        <a href="$article_link">
+            <div class="bd-blog-thumb">
+            <img src="{$header_photo}" alt="blog image">
+            </div>
+        </a>
+        <div class="bd-blog-content">
+            <div class="bd-blog-date">
+            <span>{$date}</span>
+            </div>
+            <div class="bd-blog-meta">
+                <span>
+                    <i class="fas fa-user"></i> by <a href="news.html">Alex</a>
+                </span>
+                <span>
+                    <i class="fa-solid fa-comment-dots"></i><a href="$article_link">02 Comments</a>
+                </span>
+            </div>
+            <h4 class="bd-blog-title"><a href="$article_link">
+                Which Toys are Best for Preschool Kids in USA: A Quick Guide
+            </a></h4>
+        </div>
+    </div>
+</div>
+HTML;
+                             // Output the HTML content
+                             echo $htmlContent;
+                         }
+                         ?>
+
                      </div>
                   </div>
                </div>
@@ -355,4 +436,4 @@
    </main>
    <!-- main area end here  -->
 
-<?php include('components/footer.php'); ?>
+<?php include(__DIR__ . '/components/footer.php'); ?>
