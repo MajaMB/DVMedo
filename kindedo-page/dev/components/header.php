@@ -1,3 +1,7 @@
+<?php
+require_once __DIR__ . '/../config.php';;
+?>
+
 <!doctype html>
 <html class="no-js" lang="zxx">
 
@@ -9,29 +13,29 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
 
    <!-- Place favicon.ico in the root directory -->
-   <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+   <link rel="shortcut icon" type="image/x-icon" href="<?php echo genFilePath('assets/img/logo/favicon.png');?>">
 
    <!-- CSS here -->
-   <link rel="stylesheet" href="assets/css/bootstrap.css">
-   <link rel="stylesheet" href="assets/css/meanmenu.css">
-   <link rel="stylesheet" href="assets/css/animate.min.css">
-   <link rel="stylesheet" href="assets/css/swiper-bundle.css">
-   <link rel="stylesheet" href="assets/css/slick.css">
-   <link rel="stylesheet" href="assets/css/nouislider.css">
-   <link rel="stylesheet" href="assets/css/backtotop.css">
-   <link rel="stylesheet" href="assets/css/magnific-popup.css">
-   <link rel="stylesheet" href="assets/css/nice-select.css">
-   <link rel="stylesheet" href="assets/css/flaticon_kindedo.css">
-   <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
-   <link rel="stylesheet" href="assets/css/spacing.css">
-   <link rel="stylesheet" href="assets/css/main.css">
+   <link rel="stylesheet" href="<?php echo genFilePath('assets/css/bootstrap.css');?>">
+   <link rel="stylesheet" href="<?php echo genFilePath('assets/css/meanmenu.css');?>">
+   <link rel="stylesheet" href="<?php echo genFilePath('assets/css/animate.min.css');?>">
+   <link rel="stylesheet" href="<?php echo genFilePath('assets/css/swiper-bundle.css');?>">
+   <link rel="stylesheet" href="<?php echo genFilePath('assets/css/slick.css');?>">
+   <link rel="stylesheet" href="<?php echo genFilePath('assets/css/nouislider.css');?>">
+   <link rel="stylesheet" href="<?php echo genFilePath('assets/css/backtotop.css');?>">
+   <link rel="stylesheet" href="<?php echo genFilePath('assets/css/magnific-popup.css');?>">
+   <link rel="stylesheet" href="<?php echo genFilePath('assets/css/nice-select.css');?>">
+   <link rel="stylesheet" href="<?php echo genFilePath('assets/css/flaticon_kindedo.css');?>">
+   <link rel="stylesheet" href="<?php echo genFilePath('assets/css/font-awesome-pro.css');?>">
+   <link rel="stylesheet" href="<?php echo genFilePath('assets/css/spacing.css');?>">
+   <link rel="stylesheet" href="<?php echo genFilePath('assets/css/main.css');?>">
 </head>
 
 <body>   
    <header>
       <div class="bd-header">
          <!-- Upisi u tijeku start  -->
-         <div class="theme-bg bd-header-top-3 p-relative d-none d-lg-block">
+         <div class="theme-bg bd-header-top-3 p-relative d-none d-lg-block" style="<?php printf(showUpisi());?>">
             <div class="container">
                <div class="row">
                   <div class="col-12">
@@ -81,8 +85,8 @@
                <div class="mega-menu-wrapper p-relative">
                   <div class="d-flex align-items-center justify-content-between">
                      <div class="bd-header-logo">
-                        <a href="index.html">
-                           <img src="/assets/img/logo/logo.svg" alt="logo">
+                        <a href="<?php echo genFilePath('index.php');?>">
+                           <img src="<?php echo genFilePath('assets/img/logo/logo.svg');?>" alt="logo">
                         </a>
                      </div>
                      <div class="bd-main-menu d-none d-lg-flex align-items-center">
@@ -90,39 +94,39 @@
                            <ul>
                               <!-- <li class="has-dropdown"> -->
                               <li>
-                                 <a href="index.php">Naslovnica</a>
+                                 <a href="<?php echo genFilePath('index.php');?>">Naslovnica</a>
                               </li>
                               <li class="has-dropdown">
                                  <a>O nama</a>
                                  <ul class="submenu">
-                                    <li><a href="o-nama/nas-vrtic.php">Naš vrtić</a></li>
-                                    <li><a href="o-nama/radno-vrijeme.php">Radno vrijeme</a></li>
-                                    <li><a href="o-nama/kucni-red.php">Kućni red</a></li>
-                                    <li><a href="o-nama/djelatnici.php">Djelatnici</a></li>
-                                    <li><a href="o-nama/upravno-vijece.php">Upravno vijeće</a></li>
+                                    <li><a href="<?php echo genFilePath('o-nama/nas-vrtic.php');?>">Naš vrtić</a></li>
+                                    <li><a href="<?php echo genFilePath('o-nama/radno-vrijeme.php');?>">Radno vrijeme</a></li>
+                                    <li><a href="<?php echo genFilePath('o-nama/kucni-red.php');?>">Kućni red</a></li>
+                                    <li><a href="<?php echo genFilePath('o-nama/djelatnici.php');?>">Djelatnici</a></li>
+                                    <li><a href="<?php echo genFilePath('o-nama/upravno-vijece.php');?>">Upravno vijeće</a></li>
                                  </ul>
                               </li>
 
                               <li class="has-dropdown">
                                  <a>Dokumenti</a>
                                  <ul class="submenu">
-                                    <li><a href="dokumenti/natjecaji.php">Natječaji</a></li>
-                                    <li><a href="dokumenti/pedagoska-dokumentacija.php">Pedagoška dokumentacija</a></li>
-                                    <li><a href="dokumenti/za-upise.php">Za upise</a></li>
-                                    <li><a href="dokumenti/ostalo.php">Ostalo</a></li>
+                                    <li><a href="<?php echo genFilePath('dokumenti/natjecaji.php');?>">Natječaji</a></li>
+                                    <li><a href="<?php echo genFilePath('dokumenti/pedagoska-dokumentacija.php');?>">Pedagoška dokumentacija</a></li>
+                                    <li><a href="<?php echo genFilePath('dokumenti/za-upise.php');?>">Za upise</a></li>
+                                    <li><a href="<?php echo genFilePath('dokumenti/ostalo.php');?>">Ostalo</a></li>
                                  </ul>
                               </li>
                               <li>
-                                 <a href="obavijesti.php">Obavijesti</a>
+                                 <a href="<?php echo genFilePath('obavijesti.php');?>">Obavijesti</a>
                               </li>
                               <li>
-                                 <a href="za-roditelje.php">Kutić za roditelje</a>
+                                 <a href="<?php echo genFilePath('za-roditelje.php');?>">Kutić za roditelje</a>
                               </li>                              
                               <li>
-                                 <a href="jelovnik.php">Jelovnik</a>
+                                 <a href="<?php echo genFilePath('jelovnik.php');?>">Jelovnik</a>
                               </li>
                               <li>
-                                 <a href="kontakt.php">Kontakt</a>
+                                 <a href="<?php echo genFilePath('kontakt.php');?>">Kontakt</a>
                               </li>
                            </ul>
                         </nav>

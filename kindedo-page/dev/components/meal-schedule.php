@@ -1,9 +1,11 @@
 <?php
 require __DIR__ . '/../vendor/autoload.php';
+
 use Symfony\Component\Yaml\Yaml;
 
 
-function renderMealSchedule($mdFilePath) {
+function renderMealSchedule($mdFilePath)
+{
     // Parse the YAML file
     $mealData = Yaml::parseFile($mdFilePath);
 
@@ -236,8 +238,6 @@ function renderMealSchedule($mdFilePath) {
                 </tbody>
             </table>
         </div>
-   
-
 
         <div class="bd-routine-list-wrap d-md-none">
             <div class="bd-routine-list">
@@ -367,9 +367,9 @@ function renderMealSchedule($mdFilePath) {
             </div>
         </div>
     HTML;
-    }
+}
 
-    // Example usage
-    // include 'components/meal-schedule.php';
-    // echo renderMealSchedule('menu/01122024.md');
-    ?>
+// Example usage
+// include 'components/meal-schedule.php';
+// echo renderMealSchedule('menu/01122024.md');
+?>
