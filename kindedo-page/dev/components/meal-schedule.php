@@ -238,8 +238,6 @@ function renderMealSchedule($mdFilePath)
                 </tbody>
             </table>
         </div>
-   
-
 
         <div class="bd-routine-list-wrap d-md-none">
             <div class="bd-routine-list">
