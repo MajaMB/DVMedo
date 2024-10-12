@@ -1,5 +1,5 @@
 <?php 
-    include('components/header.php'); 
+    include(__DIR__ . '/components/header.php'); 
     include('components/breadcrumb-area.php');
     echo renderBreadcrumbArea('Upisi djeteta');
 
@@ -89,4 +89,4 @@
 
 </main>
 
-<?php include('components/footer.php'); ?>
+<?php include(__DIR__ . '/components/footer.php'); ?>

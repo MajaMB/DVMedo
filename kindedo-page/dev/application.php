@@ -1,7 +1,7 @@
-<?php include('components/header.php'); ?>
+<?php include(__DIR__ . '/components/header.php'); ?>
 <main>
     Natjecaji
 </main>
 
 
-<?php include('components/footer.php'); ?>
+<?php include(__DIR__ . '/components/footer.php'); ?>

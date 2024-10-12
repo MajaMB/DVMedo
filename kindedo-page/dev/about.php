@@ -1,4 +1,4 @@
-<?php include('components/header.php'); ?>
+<?php include(__DIR__ . '/components/header.php'); ?>
    <main>
       <!-- breadcrumb area start here -->
       <section class="bd-breadcrumb-area p-relative fix theme-bg">
@@ -519,4 +519,4 @@
       <?php include('components/newsletter-subscribe.php'); ?>
 
    </main>
-   <?php include('components/footer.php'); ?>
+   <?php include(__DIR__ . '/components/footer.php'); ?>

@@ -1,41 +1,10 @@
-<?php include('components/header.php'); ?>
-   <main>
-      <!-- breadcrumb area start here -->
-      <section class="bd-breadcrumb-area p-relative fix theme-bg">
-         <!-- breadcrumb background image -->
-         <div class="bd-breadcrumb-bg" data-background="assets/img/bg/breadcrumb-bg.jpg"></div>
-         <div class="bd-breadcrumb-wrapper mb-60 p-relative">
-            <div class="container">
-               <div class="bd-breadcrumb-shape d-none d-sm-block p-relative">
-                  <div class="bd-breadcrumb-shape-1">
-                     <img src="assets/img/shape/curved-line-2.png" alt="img not found!">
-                  </div>
-                  <div class="bd-breadcrumb-shape-2">
-                     <img src="assets/img/shape/white-curved-line.png" alt="img not found!">
-                  </div>
-               </div>
-               <div class="row justify-content-center">
-                  <div class="col-xl-10">
-                     <div class="bd-breadcrumb d-flex align-items-center justify-content-center">
-                        <div class="bd-breadcrumb-content text-center">
-                           <h1 class="bd-breadcrumb-title">Kontaktirajte nas</h1>
-                           <div>
-                              <span>Radno vrijeme: 5:00 - 16:30</span>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="bd-wave-wrapper bd-wave-wrapper-3">
-            <div class="bd-wave bd-wave-3"></div>
-            <div class="bd-wave bd-wave-3"></div>
-         </div>
-      </section>
-      <!-- breadcrumb area end here  -->
+<?php
+include(__DIR__ . '/components/header.php');
+include(__DIR__ . '/components/breadcrumb-area.php');
+echo renderBreadcrumbArea('Kontaktirajte nas', "Radno vrijeme: 5:00 - 16:30");
+?>
 
-      <!-- contact info area start here -->
+    <!-- contact info area start here -->
       <section class="bd-contact-info-area pt-120 pb-95">
          <div class="container">
             <div class="row justify-content-center">
@@ -155,7 +124,7 @@
       </section>
       <!-- contact form area end here  -->
 
-      <?php include('components/newsletter-subscribe.php'); ?>
+      <?php include(__DIR__ . '/components/newsletter-subscribe.php'); ?>
 
    </main>
-<?php include('components/footer.php'); ?>
+<?php include(__DIR__ . '/components/footer.php'); ?>
