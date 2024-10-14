@@ -36,9 +36,6 @@ $config = loadConfig();
                                 <div class="bd-footer-list">
                                     <ul>
                                         <li><a href="<?php echo $config['BASE_URL'];?>about.php">O nama</a></li>
-                                        <li><a href="<?php echo $config['BASE_URL'];?>director-notes.php">Riječ ravnateljice</a></li>
-                                        <li><a href="<?php echo $config['BASE_URL'];?>programs.php">Programi</a></li>
-                                        <li><a href="<?php echo $config['BASE_URL'];?>#">Impressum</a></li>
                                         <li><a href="<?php echo $config['BASE_URL'];?>galerija.php">Galerija</a></li>
                                     </ul>
                                 </div>
@@ -68,10 +65,10 @@ $config = loadConfig();
                                 <div class="bd-footer-contact">
                                     <ul>
                                         <li><i class="fa-light fa-location-dot"></i><a href="#">Varaždinska ulica 12, Otok Virje</a></li>
-                                        <li><i class="fa-light fa-phone"></i><a href="tel:042208000">042/ 208 – 000</a>
+                                        <li><i class="fa-light fa-phone"></i><a href="tel:<?php echo PHONE; ?>"><?php echo PHONE; ?></a>
                                         </li>
-                                        <li><i class="fa-light fa-phone"></i><a href="tel:+385 92 4456 554">+385 92 4456 554</a></li>
-                                        <li><i class="fa-light fa-envelope"></i><a href="mailto:info@vrtic-medo.hr">info@vrtic-medo.hr</a></li>
+                                        <li><i class="fa-light fa-mobile"></i><a href="tel:<?php echo MOBILE; ?>"><?php echo MOBILE; ?></a></li>
+                                        <li><i class="fa-light fa-envelope"></i><a href="mailto:<?php echo INFO_MAIL; ?>"><?php echo INFO_MAIL; ?></a></li>
                                     </ul>
                                 </div>
                             </div>

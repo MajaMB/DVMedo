@@ -1,57 +1,56 @@
-<?php
-
-    // Only process POST reqeusts.
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Get the form fields and remove MORALspace.
-        $name = strip_tags(trim($_POST["name"]));
-				$name = str_replace(array("\r","\n"),array(" "," "),$name);
-        $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-        $subject = trim($_POST["subject"]);
-        $message = trim($_POST["message"]);
-
-        // Check that data was sent to the mailer.
-        if ( empty($name) OR empty($subject) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            // Set a 400 (bad request) response code and exit.
-            http_response_code(400);
-            echo "Please complete the form and try again.";
-            exit;
-        }
-
-        // Set the recipient email address.
-        // FIXME: Update this to your desired email address.
-        $recipient = "founder@stthemes.com";
-
-        // Set the email subject.
-        $sender = "New contact from $name";
-
-        //Email Header
-        $head = " /// STTHEMES \\\ ";
-
-        // Build the email content.
-        $email_content = "$head\n\n\n";
-        $email_content .= "Name: $name\n";
-        $email_content .= "Email: $email\n\n";
-        $email_content .= "Subject: $subject\n\n";
-        $email_content .= "Message:\n$message\n";
-
-        // Build the email headers.
-        $email_headers = "From: $name <$email>";
-
-        // Send the email.
-        if (mail($recipient, $sender, $email_content, $email_headers)) {
-            // Set a 200 (okay) response code.
-            http_response_code(200);
-            echo "Thank You! Your message has been sent.";
-        } else {
-            // Set a 500 (internal server error) response code.
-            http_response_code(500);
-            echo "Oops! Something went wrong and we couldn't send your message.";
-        }
-
-    } else {
-        // Not a POST request, set a 403 (forbidden) response code.
-        http_response_code(403);
-        echo "There was a problem with your submission, please try again.";
-    }
-
-?>
+<?php
+
+    require __DIR__ . '/../constants.php';
+    require_once __DIR__ . '/../vendor/autoload.php';
+
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+    use PHPMailer\PHPMailer\SMTP;
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $name = $_POST['name'] ?? '';
+        $email = $_POST['email'] ?? '';
+        $phone = $_POST['phone'] ?? '';
+        $subject = $_POST['subject'] ?? '';
+        $message = $_POST['textarea'] ?? '';
+    
+            // Validate inputs
+        if (empty($name) || empty($email) || empty($subject) || empty($message)) {
+            echo "Molimo ispunite sva obavezna polja.";
+            exit;
+        }
+
+        // Create a new PHPMailer instance
+        $mail = new PHPMailer(true);
+
+        try {
+            // Server settings
+            $mail->isSMTP();
+            $mail->Host = "mail.your-server.de"; // Set the SMTP server to send through
+            $mail->SMTPAuth = true;
+            $mail->Username = 'kontakt-forma@vrtic-medo.hr'; // SMTP username
+            $mail->Password = "kgn1dvr*XGE-ptb_kdz"; // SMTP password
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+            $mail->Port = 587; // TCP port to connect to
+
+            // Recipients
+            $mail->setFrom('kontakt-forma@vrtic-medo.hr', 'Kontakt forma');
+            $mail->addAddress("test@ten-4.eu"); // Add a recipient
+            $mail->addReplyTo($email, $name); // Reply to the customer's email
+            
+            // Content
+            $mail->isHTML(true);
+            $mail->Subject = 'Nova poruka s kontakt forme: ' . $subject;
+            $mail->Body    = "<p><strong>Ime:</strong> $name</p>
+                            <p><strong>E-mail:</strong> $email</p>
+                            <p><strong>Telefon:</strong> $phone</p>
+                            <p><strong>Poruka:</strong><br>$message</p>";
+
+            $mail->send();
+            echo 'Poruka je uspješno poslana.';
+        } catch (Exception $e) {
+            echo "Poruka nije mogla biti poslana. Greška: {$mail->ErrorInfo}";
+        }
+    }
+?>
+

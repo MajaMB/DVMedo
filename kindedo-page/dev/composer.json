@@ -2,6 +2,7 @@
     "require": {
         "erusev/parsedown": "*",
         "symfony/yaml": "^7.1",
-        "spatie/yaml-front-matter": "*"
+        "spatie/yaml-front-matter": "*",
+        "phpmailer/phpmailer": "^6.9"
     }
 }

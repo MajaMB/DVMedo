@@ -18,7 +18,7 @@
                             Zahtjev za upis djeteta roditelj/skrbnik djeteta može, uz prethodnu telefonsku najavu, podnijeti u tajništvu vrtića.
                         </p>
                         <p class="mb-25">
-                            Sve dodatne informacije možete dobiti na info@vrtic-medo.hr, ili na broj telefona 092/4456-554.   
+                            Sve dodatne informacije možete dobiti na <?php echo INFO_MAIL; ?>, ili na broj telefona <?php echo MOBILE; ?>.   
                         </p>
                         <p class="mb-25">
                             Po zaprimljenom Zahtjevu, stručna služba vrtića će kontaktirati sve zainteresirane roditelje radi inicijalnih razgovora.

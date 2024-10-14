@@ -17,6 +17,10 @@ class ComposerStaticInit61c0582020c93f343be4d0cf72abdc07
             'Symfony\\Component\\Yaml\\' => 23,
             'Spatie\\YamlFrontMatter\\' => 23,
         ),
+        'P' => 
+        array (
+            'PHPMailer\\PHPMailer\\' => 20,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -31,6 +35,10 @@ class ComposerStaticInit61c0582020c93f343be4d0cf72abdc07
         'Spatie\\YamlFrontMatter\\' => 
         array (
             0 => __DIR__ . '/..' . '/spatie/yaml-front-matter/src',
+        ),
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
     );
 

@@ -1,5 +1,6 @@
 <?php
-require_once __DIR__ . '/../config.php';;
+require_once __DIR__ . '/../config.php';
+require_once __DIR__ . '/../constants.php';;
 ?>
 
 <!doctype html>
@@ -59,7 +60,7 @@ require_once __DIR__ . '/../config.php';;
                                     <i class="fa-solid fa-phone"></i>
                                  </div>
                                  <div class="bd-header-meta-text">
-                                    <p><a href="tel:+385 92 4456 554">+385 92 4456 554</a></p>
+                                    <p><a href="tel:<?php echo MOBILE; ?>"><?php echo MOBILE; ?></a></p>
                                  </div>
                               </div>
                               <div class="bd-header-meta-item is-white d-flex align-items-center">
@@ -67,7 +68,7 @@ require_once __DIR__ . '/../config.php';;
                                     <i class="fas fa-envelope"></i>
                                  </div>
                                  <div class="bd-header-meta-text">
-                                    <p><a href="mailto:info@vrtic-medo.hr">info@vrtic-medo.hr</a></p>
+                                    <p><a href="mailto:<?php echo INFO_MAIL; ?>"><?php echo INFO_MAIL; ?></a></p>
                                  </div>
                               </div>
                            </div>

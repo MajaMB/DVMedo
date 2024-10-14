@@ -50,3 +50,8 @@ function showUpisi(): string
     }
     return "display: none !important;";
 }
+
+functzion getMAilObject() : {
+
+    
+}

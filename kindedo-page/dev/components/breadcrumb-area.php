@@ -8,6 +8,7 @@ function renderBreadcrumbArea($siteName, $subtitle = "") {
     $shape1 = genFilePath('assets/img/shape/curved-line-2.png');
     $shape2 = genFilePath('assets/img/shape/white-curved-line.png');
 
+
     return <<<HTML
       <section class="bd-breadcrumb-area p-relative fix theme-bg">
          <!-- breadcrumb background image -->

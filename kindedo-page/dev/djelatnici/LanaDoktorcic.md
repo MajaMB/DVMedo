@@ -1,7 +1,6 @@
 ---
 ime: Lana
 prezime: Doktorčić
-datum_zaposlenja: 2024-12-01
 mail: zdravstveni-djelatnik@vrtic-medo.hr
 pozicija: doktorica
 slika: lana.jpg

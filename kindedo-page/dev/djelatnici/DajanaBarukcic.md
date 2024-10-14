@@ -1,7 +1,6 @@
 ---
 ime: Dajana
 prezime: Barukčić
-datum_zaposlenja: 2024-10-01
 mail: ravnatelj@vrtic-medo.hr
 pozicija: ravnateljica
 slika: dajana.webp
