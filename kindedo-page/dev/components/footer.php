@@ -49,11 +49,11 @@ $config = loadConfig();
                                 <h4 class="bd-footer-widget-title mb-30">Korisno</h4>
                                 <div class="bd-footer-list">
                                     <ul>
-                                        <li><a href="<?php echo $config['BASE_URL'];?>upisi.php">Upisi</a></li>
-                                        <li><a href="<?php echo $config['BASE_URL'];?>jelovnik.php">Jelovnik</a></li>
-                                        <li><a href="<?php echo $config['BASE_URL'];?>application.php">Natječaji</a></li>
-                                        <li><a href="<?php echo $config['BASE_URL'];?>obavijesti.php">Novosti</a></li>
-                                        <li><a href="<?php echo $config['BASE_URL'];?>faq.php">Česta pitanja</a></li>
+                                        <li><a href="<?php echo genFilePath('upisi.php')?>">Upisi</a></li>
+                                        <li><a href="<?php echo genFilePath('jelovnik.php')?>">Jelovnik</a></li>
+                                        <li><a href="<?php echo genFilePath('dokumenti/natjecaji.php')?>">Natječaji</a></li>
+                                        <li><a href="<?php echo genFilePath('obavijesti.php')?>">Novosti</a></li>
+                                        <li><a href="<?php echo genFilePath('faq.php')?>">Česta pitanja</a></li>
                                     </ul>
                                 </div>
                             </div>

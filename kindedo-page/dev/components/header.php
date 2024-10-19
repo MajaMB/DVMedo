@@ -123,9 +123,6 @@ require_once __DIR__ . '/../constants.php';;
                                  <a href="<?php echo genFilePath('obavijesti.php');?>">Obavijesti</a>
                               </li>
                               <li>
-                                 <a href="<?php echo genFilePath('za-roditelje.php');?>">Kutić za roditelje</a>
-                              </li>                              
-                              <li>
                                  <a href="<?php echo genFilePath('jelovnik.php');?>">Jelovnik</a>
                               </li>
                               <li>

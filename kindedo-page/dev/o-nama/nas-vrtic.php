@@ -1,7 +1,7 @@
 <?php 
     include(__DIR__ . '/../components/header.php'); 
     include(__DIR__ . '/../components/breadcrumb-area.php');
-    echo renderBreadcrumbArea('Kućni red');
+    echo renderBreadcrumbArea('Naš vrtić');
 
 ?>
 <main>
