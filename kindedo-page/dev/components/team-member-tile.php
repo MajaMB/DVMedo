@@ -3,11 +3,15 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
+
 use Symfony\Component\Yaml\Yaml;
 use Spatie\YamlFrontMatter\YamlFrontMatter;
 
 function renderTeacherSlide($filePath) { 
     $content = file_get_contents($filePath);
+    $fileName = pathinfo($filePath, PATHINFO_FILENAME);
+
+    $djelatniciPage = genFilePath('o-nama/djelatnici.php') . '#' . $fileName;
 
     // Extract YAML front matter and main content
     preg_match('/---(.*?)---(.*)/s', $content, $matches);
@@ -25,14 +29,14 @@ function renderTeacherSlide($filePath) {
     return <<<HTML
     <div class="swiper-slide">
         <div class="bd-teacher">
-            <a href="djelatnici.php">
+            <a href=$djelatniciPage>
                 <div class="bd-teacher-thumb">
                     <img src="djelatnici/slike/{$safeImageName}" alt="Image not found">
                 </div>
             </a>
             <div class="bd-teacher-content-wrapper">
                 <div class="bd-teacher-content">
-                    <h4 class="bd-teacher-title"><a href="djelatnici.php">{$safeTeacherName}</a></h4>
+                    <h4 class="bd-teacher-title"><a href=$djelatniciPage>{$safeTeacherName}</a></h4>
                     <span class="bd-teacher-des">{$safePosition}</span>
                 </div>
                 <div class="bd-teacher-social"><ul></ul></div>
