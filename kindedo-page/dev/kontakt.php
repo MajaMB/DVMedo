@@ -57,7 +57,7 @@ echo renderBreadcrumbArea('Kontaktirajte nas', "Radno vrijeme: ".OFFICE_HOURS_ST
                <div class="col-xl-6 mb-60">
                   <div class="bd-contact-form wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">
                      <h3 class="bd-contact-form-title mb-25">Pošaljite nam poruku</h3>
-                     <form action="assets/mail.php" method="post">
+                     <form id="contact-form">
                         <div class="row">
                            <div class="col-md-6">
                                  <div class="bd-contact-input mb-30">
@@ -96,17 +96,39 @@ echo renderBreadcrumbArea('Kontaktirajte nas', "Radno vrijeme: ".OFFICE_HOURS_ST
                                  </div>
                            </div>
                            <div class="col-md-12">
-                                 <div class="bd-contact-agree-btn">
-                                    <button type="submit" class="bd-btn">
+                              <div class="bd-contact-agree-btn">
+                                 <button type="submit" class="bd-btn">
                                        <span class="bd-btn-inner">
-                                             <span class="bd-btn-normal">Pošalji</span>
-                                             <span class="bd-btn-hover">Pošalji</span>
+                                          <span class="bd-btn-normal">Pošalji</span>
+                                          <span class="bd-btn-hover">Pošalji</span>
                                        </span>
-                                    </button>
-                                 </div>
+                                 </button>
+                                 <span id="form-message"></span> <!-- Element to display messages -->
+                              </div>
                            </div>
                         </div>
                      </form>
+                     <script>
+                        $(document).ready(function() {
+                              $('#contact-form').on('submit', function(event) {
+                                 console.log("Form submitted via AJAX");
+                                 event.preventDefault();
+                                 var formData = $(this).serialize();
+
+                                 $.ajax({
+                                    type: 'POST',
+                                    url: 'assets/mail.php',
+                                    data: formData,
+                                    success: function(response) {
+                                          $('#form-message').text(response).css('color', 'green');
+                                    },
+                                    error: function(xhr, status, error) {
+                                       var errorMsg = xhr.responseText || 'Greška prilikom slanja poruke. Pokušajte ponovo.'; 
+                                       $('#form-message').text(errorMsg).css('color', 'red');                                    }
+                                 });
+                              });
+                        });
+                     </script>
                   </div>
                </div>
                <div class="col-xl-6 mb-60">
@@ -114,7 +136,8 @@ echo renderBreadcrumbArea('Kontaktirajte nas', "Radno vrijeme: ".OFFICE_HOURS_ST
                      <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14596.899807208923!2d90.3654215!3d23.8461445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1673765392297!5m2!1sen!2sbd"
                         style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        referrerpolicy="no-referrer-when-downgrade">
+                     </iframe>
                   </div>
                </div>
             </div>

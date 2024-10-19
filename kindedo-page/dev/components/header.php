@@ -30,6 +30,8 @@ require_once __DIR__ . '/../constants.php';;
    <link rel="stylesheet" href="<?php echo genFilePath('assets/css/font-awesome-pro.css');?>">
    <link rel="stylesheet" href="<?php echo genFilePath('assets/css/spacing.css');?>">
    <link rel="stylesheet" href="<?php echo genFilePath('assets/css/main.css');?>">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>   
