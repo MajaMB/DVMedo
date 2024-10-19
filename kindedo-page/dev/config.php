@@ -56,8 +56,8 @@ function getSecrets() {
     return [
         'mail' => [
             'contact_form_mail' => "kontakt-forma@vrtic-medo.hr",
-            'contact_form_password' => $cfg['secrets']['contact_form_password'] ?? '', // fetch from env.php
+            'contact_form_password' => $cfg['secrets']['contact_form_password'] ?? "", // fetch from env.php
             'smtp_server' => 'mail.your-server.de'
-        ],
+        ]
     ];
 }

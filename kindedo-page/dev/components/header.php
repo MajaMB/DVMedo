@@ -9,7 +9,7 @@ require_once __DIR__ . '/../constants.php';;
 <head>
    <meta charset="utf-8">
    <meta http-equiv="x-ua-compatible" content="ie=edge">
-   <title>Vrtic Medo - Djecji vrtic Medo</title>
+   <title>Djecji vrtic Medo</title>
    <meta name="description" content="">
    <meta name="viewport" content="width=device-width, initial-scale=1">
 

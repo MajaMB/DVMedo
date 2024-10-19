@@ -4,5 +4,6 @@ return [
     'BASE_URL' => '',
     // Add other environment-specific configurations here
     'secrets' => [
-        'contact_form_password' => 'password',
+        'contact_form_password' => "replace_with_PW"
+    ]
 ];
