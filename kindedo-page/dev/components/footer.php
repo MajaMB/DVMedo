@@ -14,7 +14,7 @@ $config = loadConfig();
                         <div class="bd-footer-widget bd-footer-widget-1 mb-50">
                             <div class="bd-footer-logo mb-35">
                                 <a href="index.html"> <img
-                                            src="<?php echo $config['BASE_URL']; ?>assets/img/logo/logo.svg"
+                                            src="<?php echo genFilePath('assets/img/logo/logo.svg')?>"
                                             alt="img not found!"></a>
                             </div>
                             <div class="bd-footer-widget-content mb-40">
@@ -35,8 +35,9 @@ $config = loadConfig();
                                 <h4 class="bd-footer-widget-title mb-30">O nama</h4>
                                 <div class="bd-footer-list">
                                     <ul>
-                                        <li><a href="<?php echo $config['BASE_URL'];?>about.php">O nama</a></li>
-                                        <li><a href="<?php echo $config['BASE_URL'];?>galerija.php">Galerija</a></li>
+                                        <li><a href="<?php echo genFilePath('o-nama/kucni-red.php')?>">Kućni red</a></li>
+                                        <li><a href="<?php echo genFilePath('o-nama/upravno-vijece.php')?>">Upravno vijeće</a></li>
+                                        <li><a href="<?php echo genFilePath('galerija.php')?>">Galerija</a></li>
                                     </ul>
                                 </div>
                             </div>
